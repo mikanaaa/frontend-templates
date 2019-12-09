@@ -20,13 +20,17 @@
   font-weight: normal;
   margin: 0 0 5px 0;
 }
-.card-body > p {
+.card-body div {
+  display: flex;
+  justify-content: space-between;
+}
+.card-body p {
   display: inline-block;
   margin: 0;
   font-size: 12px;
   padding: 5px 0;
 }
-.card-body > button {
+.card-body button {
   border: none;
   padding: 5px 10px;
   border-radius: 10px;
@@ -86,4 +90,47 @@
   background-color: #244;
   color: white;
   padding: 5px 10px;
+}
+.loader {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  border-color: brown brown transparent transparent;
+  animation-name: loader-spin;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes loader-spin {
+  0% {
+    transform: rotate(0deg);
+    border-color: brown brown transparent transparent;
+  }
+  50% {
+    transform: rotate(180deg);
+    border-color: teal teal transparent transparent;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-color: brown brown transparent transparent;
+  }
+}
+.image-container {
+  position: relative;
+  cursor: pointer;
+  width: min-content;
+}
+.image-container span {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 7.5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  left: 0;
+  visibility: hidden;
+}
+.image-container:hover span {
+  visibility: visible;
 }

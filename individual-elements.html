@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Individual Elements</title>
-  <link rel="stylesheet" href="individual-elements.css">
-</head>
-<body>
-  <h3>Individual elements</h3>
-  <p>Card</p>
-  <p>#Todo: Push 'Add' right</p>
-  <div class="card">
-    <img src="./assets/image400x200.jpg" alt="Watch">
-    <div class="card-body">
-      <h3>Wrist Watch</h3>
-      <p>$24.99</p>
-      <button>Add</button>
-    </div>
-  </div>
-  <p>Modal</p>
-  <button onclick="openModal()">Open modal</button>
-  <div class="modal-container" onclick="closeModal(event)">
-    <div>
-      <div class="modal-head">
-        <h2>Wrist Watch</h2>
-        <p onclick="closeModalButton(event)">x</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Individual Elements</title>
+    <link rel="stylesheet" href="individual-elements.css" />
+  </head>
+  <body>
+    <h3>Individual elements</h3>
+    <p>Card</p>
+    <div class="card">
+      <img src="./assets/image400x200.jpg" alt="Watch" />
+      <div class="card-body">
+        <h3>Wrist Watch</h3>
+        <div>
+          <p>$24.99</p>
+          <button>Add</button>
+        </div>
       </div>
-      <img src="assets/image400x200.jpg" alt="">
-      <div class="modal-body"><button>Buy</button></div>
     </div>
-  </div>
-  <script src="individual-elements.js"></script>
-</body>
+    <p>Modal</p>
+    <button onclick="openModal()">Open modal</button>
+    <div class="modal-container" onclick="closeModal(event)">
+      <div>
+        <div class="modal-head">
+          <h2>Wrist Watch</h2>
+          <p onclick="closeModalButton(event)">x</p>
+        </div>
+        <img src="assets/image400x200.jpg" alt="" />
+        <div class="modal-body"><button>Buy</button></div>
+      </div>
+    </div>
+    <p>Loader</p>
+    <div class="loader"></div>
+    <p>Text Over image</p>
+    <div class="image-container">
+      <img src="assets/image400x200.jpg" alt="Image">
+      <span>Click to zoom in</span>
+    </div>
+    <script src="individual-elements.js"></script>
+  </body>
 </html>
