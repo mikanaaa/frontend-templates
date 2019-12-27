@@ -8,7 +8,9 @@ Developing elements commonly seen in websites
 * Labeled image
 
 ## Group elements
-* In progress
+* Navigation
+* Dropdown
+* Image slideshow
 
 ## Responsive design
 * In progress

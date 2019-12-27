@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="group.css">
+</head>
+<body>
+  <div class="navigation">
+    <h2 class="company">Company Name</h2>
+    <div class="links">
+      <a href="#">Home</a>
+      <a href="#">News</a>
+      <a href="#">Contact</a>
+      <a href="#">About</a>
+    </div>
+  </div>
+  <div class="dropdown-button">
+    <button>Dropdown</button>
+    <div class="dropdown-container">
+      <a href="#">Home</a>
+      <a href="#">News</a>
+      <a href="#">Contact</a>
+      <a href="#">About</a>
+    </div>
+  </div>
+  <div class="slideshow">
+    <img src="assets/image400x200.jpg" alt="Alternative">
+    <div class="slideshow-selection">
+      <div data-number="0" onclick="updateImage(this)" class="selection"></div>
+      <div data-number="1" onclick="updateImage(this)" class="selection"></div>
+      <div data-number="2" onclick="updateImage(this)" class="selection"></div>
+      <div data-number="3" onclick="updateImage(this)" class="selection"></div>
+    </div>
+  </div>
+  <script src="group.js"></script>
+</body>
+</html>
