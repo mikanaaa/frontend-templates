@@ -13,10 +13,7 @@ Developing elements commonly seen in websites
 * Image slideshow
 
 ## Responsive design
-* In progress
-
-## Inputs
-* In progress
+Creating responsive, mobile first website using flexbox, to handle variable screen sizes.
 
 ## Try it
 To view elements, clone repository & open html files in any browser.

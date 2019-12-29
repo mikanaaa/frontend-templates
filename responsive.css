@@ -59,11 +59,49 @@ header li a {
 header li a:hover {
   background-color: #aaa;
 }
+footer {
+  background-color: lightgray;
+}
+footer ul {
+  padding: 5px 0;
+}
+footer li {
+  display: inline-block;
+}
+footer li:first-of-type {
+  display: block;
+  padding-bottom: 5px;
+}
+footer li a {
+  color: #222;
+  padding: 2px;
+}
+footer .nav-links > * {
+  text-align: center;
+}
 @media only screen and (min-width: 768px) {
   .body img {
     display: block;
     width: 100%;
     margin-bottom: 15px;
+  }
+  footer ul {
+    display: inline-block;
+    min-width: 22%;
+    vertical-align: top;
+  }
+  footer li {
+    display: block;
+    text-align: center;
+  }
+  footer > div {
+    width: max-content;
+    margin: auto;
+  }
+  footer > div > * {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -98,12 +136,12 @@ header li a:hover {
   body {
     margin: 8px 200px;
   }
-  .body .block{
+  .body .block {
     display: flex;
     flex-basis: 50%;
     flex-flow: row-reverse wrap;
   }
-  .body .block > *{
+  .body .block > * {
     flex: 1;
-  }     
+  }
 }
